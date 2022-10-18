@@ -43,9 +43,9 @@ int print_pointer(va_list types, char buffer[], int flags, int width, int precis
 	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
 
-		ind++;
+	ind++;
 
-		return (write_pointer(buffer, ind, length, width, flags, padd, extra_c, padd_start));
+	return (write_pointer(buffer, ind, length, width, flags, padd, extra_c, padd_start));
 }
 /* print non printable */
 /**
@@ -66,7 +66,7 @@ int print_non_printable(va_list types, char buffer[], int flags, int width, int 
 	UNUSED(flags);
 	UNUSED(width);
 	UNUSED(precision);
-	UNUSED(siza);
+	UNUSED(size);
 
 	if (str == NULL)
 		return (write(1, "(null)", 6));
