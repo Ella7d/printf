@@ -2,7 +2,7 @@
 
 /**
  * get_flag - flags if _printf finds
- * @s: that holds the flag specifier
+ * @s: that holds the flags specifier
  * @f: pointer to the struct flags in which we turn the flags on
  *
  * Return: 1 if a flag has been turned on, 0 otherwise
@@ -10,6 +10,7 @@
 int get_flag(char s, flags_t *f)
 {
 int i = 0;
+
 switch (s)
 {
 case '+':
